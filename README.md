@@ -1,19 +1,21 @@
-# Gaulmark Website - Vercel Deploy Ready
+# Gaulmark Global Trade Website
 
-## ✅ One-Click Deploy
+This project contains the source code for the Gaulmark Global Trade LLC website, built with Next.js and Tailwind CSS. It includes pages for showcasing commodities, company background, leadership, investor inquiries, and contact information.
 
-1. Upload this folder to a GitHub repository.
-2. Go to https://vercel.com/import/git
-3. Select your repo and follow the prompts.
-4. Vercel will host your site live and give you a shareable link.
-
-## 🔧 Local Preview
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open http://localhost:3000
+## Build
 
-*Replace `G-XXXXXXX` with your actual Google Analytics ID.*
+```bash
+npm run build
+npm run start
+```
+
+## Deployment
+
+Deploy on Vercel by importing this repository and following the prompts. Ensure that the `gaulmark-logo.png` image is placed in the `public` directory.
