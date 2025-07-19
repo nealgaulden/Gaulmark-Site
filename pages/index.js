@@ -62,9 +62,15 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-center mb-8">Our Commodities</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
             <div className="border rounded-lg shadow-sm p-4 flex flex-col items-center">
+              {/*
+                Use a locally hosted image for sugar so the asset reliably renders.
+                Place your own photo of packaged sugar sacks in the `/public` folder
+                and name it `sugar-bags.jpg`. You can replace this with a different
+                filename if you prefer; just update the `src` accordingly.
+              */}
               <img
-                src="https://images.unsplash.com/photo-1522562403401-1e7a247384ac?auto=format&fit=crop&w=400&q=80"
-                alt="Sugar Bags"
+                src="/sugar-bags.jpg"
+                alt="Sugar Packaging"
                 className="w-full h-40 object-cover mb-3 rounded"
               />
               <h3 className="text-xl font-semibold mb-1">Sugar</h3>
@@ -73,9 +79,14 @@ export default function Home() {
               </p>
             </div>
             <div className="border rounded-lg shadow-sm p-4 flex flex-col items-center">
+              {/*
+                Use a locally hosted image for rice. Place an image of rice sacks
+                in the `/public` directory named `rice-sacks.jpg` (or update the
+                filename here). This avoids relying on third‑party image hosts.
+              */}
               <img
-                src="https://images.unsplash.com/photo-1624861302887-7b87f4783d0b?auto=format&fit=crop&w=400&q=80"
-                alt="Rice Sacks"
+                src="/rice-sacks.jpg"
+                alt="Rice Packaging"
                 className="w-full h-40 object-cover mb-3 rounded"
               />
               <h3 className="text-xl font-semibold mb-1">Rice</h3>
@@ -84,8 +95,14 @@ export default function Home() {
               </p>
             </div>
             <div className="border rounded-lg shadow-sm p-4 flex flex-col items-center">
+              {/*
+                Use a locally hosted image for minerals and logistics. Place an
+                appropriate photo (e.g. shipping containers or mineral stockpiles)
+                in the `/public` directory named `freight-shipping.jpg` and reference
+                it here.
+              */}
               <img
-                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80"
+                src="/freight-shipping.jpg"
                 alt="Freight Shipping"
                 className="w-full h-40 object-cover mb-3 rounded"
               />
@@ -127,16 +144,17 @@ export default function Home() {
         <section className="py-12 bg-white">
           <h2 className="text-2xl font-bold text-center mb-6">Leadership</h2>
           <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center px-4">
-            <img
-              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80"
-              alt="Leadership"
-              className="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6 object-cover"
-            />
+            {/*
+              We omit a portrait here to respect personal privacy. If you would like
+              to include a photo in the future, add an <img> tag and place the
+              corresponding image in the `/public` directory.
+            */}
             <div>
-              <h3 className="text-xl font-semibold mb-2">Neal Gaulden</h3>
-              <p className="text-sm text-gray-600 mb-2">Founder & CEO</p>
+              {/* You can add your name below or leave it anonymous. */}
+              <h3 className="text-xl font-semibold mb-2">Managing Partner</h3>
+              <p className="text-sm text-gray-600 mb-2">Managing Partner</p>
               <p className="text-gray-700">
-                Neal brings over 15 years of experience in global trade, logistics, and government relations, leading teams to deliver complex projects with precision.
+                Our leadership team brings over 15 years of experience in global trade, logistics and government relations, leading teams to deliver complex projects with precision.
               </p>
             </div>
           </div>
